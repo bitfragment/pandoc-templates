@@ -38,6 +38,15 @@ $endfor$
 $for(include-before)$
 $include-before$
 $endfor$
+$if(note)$
+<div class="note">$note$</div>
+$endif$
+$if(published)$
+<div class="published">$published$</div>
+$endif$
+$if(license)$
+<div class="license">$license$</div>
+$endif$
 $if(title)$
 <div id="$idprefix$header">
 <h1 class="title">$title$</h1>
