@@ -65,7 +65,15 @@ $if(author.email)$
 $endif$
 $endfor$
 $if(date)$
+$if(project)$
+$if(version)$
+<h3 class="date">$project$ $version$ $date$</h3>
+$else$
+<h3 class="date">$project$ $date$</h3>
+$endif$
+$else$
 <h3 class="date">$date$</h3>
+$endif$
 $endif$
 </div>
 $endif$
